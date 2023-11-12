@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./register.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>Đăng ký</h3>
+      <form action="">
+        <div class="field">
+          <label for="username">Tên tài khoảng</label>
+          <input type="text" placeholder="Nhập tên đăng nhập" id="username" />
+          <p class="error" id="username-error"></p>
+        </div>
+        <div class="field">
+          <label for="password">Mật khẩu</label>
+          <input type="password" placeholder="Nhập mật khẩu" id="password" />
+          <p class="error" id="password-error"></p>
+        </div>
+        <div class="field">
+          <label for="repassword">Nhập lại mật khẩu</label>
+          <input type="password" placeholder="Nhập mật khẩu" id="repassword" />
+          <p class="error" id="repassword-error"></p>
+        </div>
+        <p class="error" id="register-error"></p>
+        <button type="button" id="register-btn">Đăng ký</button>
+        <div class="back">
+          <a href="/body/index.html">
+            <i class="fa-solid fa-house"></i>
+          </a>
+          <a href="/login/login.html">Đăng nhập</a>
+        </div>
+      </form>
+    </div>
+    <script src="./register.js"></script>
+  </body>
+</html>

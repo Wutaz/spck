@@ -1,0 +1,116 @@
+* {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif;
+  /* background-color: aliceblue; */
+  background-image: url("/images/login-bg.png");
+  background-position: center;
+  /* background-color: rgba(13, 179, 230, 0.836); */
+  background-blend-mode: multiply;
+  height: 100vh;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+.text-pink {
+  color: rgb(185, 111, 42) !important;
+}
+
+.text-pink:hover {
+  color: rgb(225, 48, 77);
+}
+.navbar {
+  background-color: rgb(185, 111, 42);
+}
+.container-fluid {
+  background-color: rgb(185, 111, 42);
+}
+.product-list {
+  padding: 0 50px;
+  background-color: rgb(185, 111, 42);
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+/* .product {
+  background-color: white;
+  margin: 10px;
+  border-radius: 4px;
+  transition: all 0.5s;
+  display: flex;
+}
+.product:hover {
+  transform: scale(1.1);
+} */
+.product-img {
+  height: 600px;
+  object-fit: cover;
+  display: block;
+  padding: 15px;
+}
+.product-texts {
+  height: 626px;
+  width: 626;
+  object-fit: cover;
+  display: block;
+  padding: 15px;
+}
+.product-name {
+  color: white;
+}
+.new-price {
+  font-size: 50px;
+}
+.btn-gh {
+  height: 50px;
+  margin: 5px;
+  background-color: cornflowerblue;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.5s;
+}
+.btn-gh:hover {
+  transform: scale(1.2);
+}
+.btn-sp {
+  height: 50px;
+  margin: 5px;
+  background-color: cornflowerblue;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.5s;
+}
+.btn-sp:hover {
+  transform: scale(1.2);
+}
+.reduce-price {
+  color: red;
+}
+.button {
+  color: brown;
+  background-color: rgb(255, 123, 0);
+}
+.button:hover {
+  background-color: antiquewhite;
+}
+.fa-regular {
+  background-color: rgb(185, 111, 42);
+  color: rgb(0, 0, 0);
+  transition: all 0.5s;
+}
+.fa-user {
+  background-color: rgb(185, 111, 42);
+  color: rgb(0, 0, 0);
+  transition: all 0.5s;
+}
+.fa-user:hover {
+  background-color: rgb(240, 139, 45);
+  transform: scale(1.2);
+}
+.fa-regular:hover {
+  background-color: rgb(240, 139, 45);
+  transform: scale(1.2);
+}

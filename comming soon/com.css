@@ -1,0 +1,43 @@
+* {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif;
+  /* background-color: aliceblue; */
+  background-image: url("/images/login-bg.png");
+  background-position: center;
+  /* background-color: rgba(13, 179, 230, 0.836); */
+  background-blend-mode: multiply;
+  height: 100vh;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+.text-pink {
+  color: rgb(185, 111, 42) !important;
+}
+
+.text-pink:hover {
+  color: rgb(225, 48, 77);
+}
+.navbar {
+  background-color: rgb(185, 111, 42);
+}
+.nav-link {
+  transition: all 0.5s;
+}
+.nav-link:hover {
+  background-color: rgb(240, 139, 45);
+  transform: scale(1.2);
+}
+.container {
+  background-color: rgb(202, 105, 15);
+  padding: 20px 40px;
+  border-radius: 4px;
+  width: 450px;
+  display: flex;
+  justify-content: space-around;
+}
+.field {
+  margin-top: 15px;
+}

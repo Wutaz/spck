@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="/images/logo-emma-tron-02.png" />
+    <title>Emma shop</title>
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../body/index.html"
+          ><img src="/images/logo-emma-tron-02.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#manga"
+                >Manga</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#mo hinh"
+                >Mô hình</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#cosplay"
+                >Trang phục cosplay</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dịch vụ
+              </a>
+              <ul class="dropdown-menu">
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Liên hệ</a>
+                </li> -->
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../comming soon/commingsoon.html"
+                    >Phản hồi với shop</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="../comming soon/commingsoon.html"
+                    >Trả hàng</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="../comming soon/commingsoon.html"
+                    >Đánh giá shop</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li> -->
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <a href="../login/login.html">
+            <i class="fa-regular fa-user p-2 mx-2"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide my-slider"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner h-100">
+        <div class="carousel-item h-100 active">
+          <img
+            src="/images/manga.jpg"
+            class="d-block w-100 h-100 slider-img"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item h-100">
+          <img
+            src="/images/mo hinh.jpg"
+            class="d-block w-100 h-100 slider-img"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item h-100">
+          <img
+            src="/images/cosplay.png"
+            class="d-block w-100 h-100 slider-img"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div id="products">
+      <div id="manga">
+        <h1 class="text-center">Manga</h1>
+        <div class="product-list">
+          <div class="product">
+            <a href="../mangasp/mangasp.html">
+              <img
+                class="product-img"
+                src="https://product.hstatic.net/200000343865/product/1_112709b6028143c2840101e561d613b2_master.jpg"
+                alt=""
+              />
+            </a>
+            <a class="product-name" href="../mangasp/mangasp.html"
+              >Học viện anh hùng vol 1
+            </a>
+            <div class="product-prices">
+              <span class="new-price">25.000đ</span>
+              <!-- gia goc -->
+              <!-- <s>500.000đ</s> -->
+              <!-- phan tram giam gia -->
+              <!-- <span>-14%</span>  -->
+            </div>
+          </div>
+          <div class="product">
+            <a href="../mangasp/mangasp.html">
+              <img
+                class="product-img"
+                src="https://product.hstatic.net/200000343865/product/2_12adc823d2294975b3f9d3ff4fa42968_master.jpg"
+                alt=""
+              />
+            </a>
+            <a class="product-name" href="../mangasp/mangasp.html"
+              >Học viện anh hùng vol 2
+            </a>
+            <div class="product-prices">
+              <span class="new-price">25.000đ</span>
+              <!-- gia goc -->
+              <!-- <s>500.000đ</s> -->
+              <!-- phan tram giam gia -->
+              <!-- <span>-14%</span>  -->
+            </div>
+          </div>
+          <div class="product">
+            <a href="../mangasp/mangasp.html">
+              <img
+                class="product-img"
+                src="https://nhasachquangloi.vn/pub/media/catalog/product/cache/3bd4b739bad1f096e12e3a82b40e551a/t/n/tn-ttr-kd-2412-3.jpg"
+                alt=""
+              />
+            </a>
+            <a class="product-name" href="../mangasp/mangasp.html"
+              >Học viện anh hùng vol 3
+            </a>
+            <div class="product-prices">
+              <span class="new-price">25.000đ</span>
+              <!-- gia goc -->
+              <!-- <s>500.000đ</s> -->
+              <!-- phan tram giam gia -->
+              <!-- <span>-14%</span>  -->
+            </div>
+          </div>
+          <div class="product">
+            <a href="../mangasp/mangasp.html">
+              <img
+                class="product-img"
+                src="https://product.hstatic.net/200000343865/product/4_4df4502ca2ee4f199f6e4e46d820a171_master.jpg"
+                alt=""
+              />
+            </a>
+            <a class="product-name" href="../mangasp/mangasp.html"
+              >Học viện anh hùng vol 4
+            </a>
+            <div class="product-prices">
+              <span class="new-price">25.000đ</span>
+              <!-- gia goc -->
+              <!-- <s>500.000đ</s> -->
+              <!-- phan tram giam gia -->
+              <!-- <span>-14%</span>  -->
+            </div>
+          </div>
+          <div class="product">
+            <a href="../mangasp/mangasp.html">
+              <img
+                class="product-img"
+                src="https://product.hstatic.net/200000343865/product/5_4a182a9e0bc9478ca0d373a1eaccb5e3_master.jpg"
+                alt=""
+              />
+            </a>
+            <a class="product-name" href="../mangasp/mangasp.html"
+              >Học viện anh hùng vol 5
+            </a>
+            <div class="product-prices">
+              <span class="new-price">25.000đ</span>
+              <!-- gia goc -->
+              <!-- <s>500.000đ</s> -->
+              <!-- phan tram giam gia -->
+              <!-- <span>-14%</span>  -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="mo hinh">
+        <h1 class="text-center">Mô hình</h1>
+        <div class="product-list">
+          <div class="product">
+            <a href="../mohinhsp/mohinhsp.html">
+              <img
+                class="product-img"
+                src="https://product.hstatic.net/1000160337/product/artfx_j_my_hero_academia_himiko_toga__1__1855758354f447abaed40d20c98ec25f_master.jpg"
+                alt=""
+              />
+            </a>
+            <a class="product-name" href="../mohinhsp/mohinhsp.html"
+              >Mô hình Himiko Toga</a
+            >
+            <div class="product-prices">
+              <span class="new-price">2.590.000đ</span>
+              <!-- gia goc -->
+              <s>3.700.000đ</s>
+              <!-- phan tram giam gia -->
+              <span class="reduce-price">-30%</span>
+            </div>
+          </div>
+          <div class="product">
+            <a href="../mohinhsp/mohinhsp.html">
+              <img
+                class="product-img"
+                src="https://down-vn.img.susercontent.com/file/a15ee12f9901d6879529ec233914d8e2"
+                alt=""
+              />
+            </a>
+            <a class="product-name" href="../mohinhsp/mohinhsp.html"
+              >Mô hình Naruto cữ vĩ</a
+            >
+            <div class="product-prices">
+              <span class="new-price">1.320.000đ</span>
+              <!-- gia goc -->
+              <s>1.650.000đ</s>
+              <!-- phan tram giam gia -->
+              <span class="reduce-price">-20%</span>
+            </div>
+          </div>
+          <div class="product">
+            <a href="../mohinhsp/mohinhsp.html">
+              <img
+                class="product-img"
+                src="https://sapo.dktcdn.net/100/441/564/variants/mhaf4f01-1657881109140.jpg"
+                alt=""
+              />
+            </a>
+            <a class="product-name" href="../mohinhsp/mohinhsp.html"
+              >Mô hình All Might</a
+            >
+            <div class="product-prices">
+              <span class="new-price">1.443.000đ</span>
+              <!-- gia goc -->
+              <!-- <s>3.700.000đ</s> -->
+              <!-- phan tram giam gia -->
+              <!-- <span class="reduce-price">-30%</span>  -->
+            </div>
+          </div>
+          <div class="product">
+            <a href="../mohinhsp/mohinhsp.html">
+              <img
+                class="product-img"
+                src="https://i.ebayimg.com/images/g/tO0AAOSwyPZivRLq/s-l1200.webp"
+                alt=""
+              />
+            </a>
+            <a class="product-name" href="../mohinhsp/mohinhsp.html"
+              >Mô hình Deku hắc hóa
+            </a>
+            <div class="product-prices">
+              <span class="new-price">4.120.431đ</span>
+              <!-- gia goc -->
+              <!-- <s>3.700.000đ</s> -->
+              <!-- phan tram giam gia -->
+              <!-- <span class="reduce-price">-30%</span>  -->
+            </div>
+          </div>
+          <div class="product">
+            <a href="../mohinhsp/mohinhsp.html">
+              <img
+                class="product-img"
+                src="https://bizweb.dktcdn.net/100/418/981/products/z3933155100817-b5b10f42ecfab63fb6580108c6281f24.jpg?v=1670210916150"
+                alt=""
+              />
+            </a>
+            <a class="product-name" href="../mohinhsp/mohinhsp.html"
+              >Mô hình Zoro</a
+            >
+            <div class="product-prices">
+              <span class="new-price">593.100đ</span>
+              <!-- gia goc -->
+              <s>659.000đ</s>
+              <!-- phan tram giam gia -->
+              <span class="reduce-price">-10%</span>
+            </div>
+          </div>
+          <div class="product">
+            <a href="../mohinhsp/mohinhsp.html">
+              <img
+                class="product-img"
+                src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRfKHMaOIVkibceQeC8mPNq-0iD8xrvHuqvYRxMOfqODlR2AMftCIwd0plaXSqqbwSRGTrzSVyBm68xAa6-9eUjXlayAvEuWA&usqp=CAE"
+                alt=""
+              />
+            </a>
+            <a class="product-name" href="../mohinhsp/mohinhsp.html"
+              >Mô hình Râu trắng</a
+            >
+            <div class="product-prices">
+              <span class="new-price">584.550đ</span>
+              <!-- gia goc -->
+              <s>1.299.000đ</s>
+              <!-- phan tram giam gia -->
+              <span class="reduce-price">-55%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="cosplay">
+        <h1 class="text-center">Trang Phục Cosplay</h1>
+        <div class="product-list">
+          <div class="product">
+            <a href="../cosplaysp/cosplaysp.html">
+              <img
+                class="product-img"
+                src="https://cdn-amz.woka.io/images/I/618mKOSJcML.SS800.jpg"
+                alt=""
+              />
+            </a>
+            <a class="product-name" href="../cosplaysp/cosplaysp.html"
+              >Trang phục Toga
+            </a>
+            <div class="product-prices">
+              <span class="new-price">400.000đ</span>
+              <!-- gia goc -->
+              <!-- <s>500.000đ</s> -->
+              <!-- phan tram giam gia -->
+              <!-- <span>-14%</span>  -->
+            </div>
+          </div>
+          <div class="product">
+            <a href="../cosplaysp/cosplaysp.html">
+              <img
+                class="product-img"
+                src="https://sc04.alicdn.com/kf/H812c105680314b6aac0abfe3f8bf980fL.jpg"
+                alt=""
+              />
+            </a>
+            <a class="product-name" href="../cosplaysp/cosplaysp.html"
+              >Trang phục Hutao
+            </a>
+            <div class="product-prices">
+              <span class="new-price"> 121.130đ</span>
+              <!-- gia goc -->
+              <s> 201.883đ</s>
+              <!-- phan tram giam gia -->
+              <span class="reduce-price">-40%</span>
+            </div>
+          </div>
+          <div class="product">
+            <a href="../cosplaysp/cosplaysp.html">
+              <img
+                class="product-img"
+                src="https://lzd-img-global.slatic.net/g/p/abcf3d866fa95edf710556b268a03910.jpg_720x720q80.jpg"
+                alt=""
+              />
+            </a>
+            <a class="product-name" href="../cosplaysp/cosplaysp.html"
+              >Trang phục Naruto
+            </a>
+            <div class="product-prices">
+              <span class="new-price">111.750đ</span>
+              <!-- gia goc -->
+              <s>149.000đ</s>
+              <!-- phan tram giam gia -->
+              <span class="reduce-price">-30%</span>
+            </div>
+          </div>
+          <div class="product">
+            <a href="../cosplaysp/cosplaysp.html">
+              <img
+                class="product-img"
+                src="https://ae01.alicdn.com/kf/Hea1d1db62425479a90eb8e68498f9a1al.jpg_640x640Q90.jpg_.webp"
+                alt=""
+              />
+            </a>
+            <a class="product-name" href="../cosplaysp/cosplaysp.html"
+              >Trang phục Saitama
+            </a>
+            <div class="product-prices">
+              <span class="new-price">229.500đ</span>
+              <!-- gia goc -->
+              <s>270.000đ</s>
+              <!-- phan tram giam gia -->
+              <span class="reduce-price">-15%</span>
+            </div>
+          </div>
+          <div class="product">
+            <a href="../cosplaysp/cosplaysp.html">
+              <img
+                class="product-img"
+                src="https://s.alicdn.com/@sc04/kf/Hd8ef6c392f5249bbbe2e4af4038ebed8w.jpg_720x720q50.jpg"
+                alt=""
+              />
+            </a>
+            <a class="product-name" href="../cosplaysp/cosplaysp.html"
+              >Trang phục Deku
+            </a>
+            <div class="product-prices">
+              <span class="new-price">205.990đ</span>
+              <!-- gia goc -->
+              <s>216.832đ</s>
+              <!-- phan tram giam gia -->
+              <span class="reduce-price">-5%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <div class="contact-text">
+        <h1>Liên hệ</h1>
+      </div>
+      <div class="contact-icons">
+        <a href="https://www.facebook.com/profile.php?id=100089210212049"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://mail.google.com/mail/u/0/?pli=1#inbox"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+        <a href="https://www.youtube.com/channel/UCcvpTXTUELP-djAeFW34naA"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <a href="https://twitter.com/tranpho05119324"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+      </div>
+      <div class="location"></div>
+    </div>
+  </body>
+</html>
